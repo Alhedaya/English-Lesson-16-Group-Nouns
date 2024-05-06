@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 16 - Group Nouns </title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<style>
+body{ background: linear-gradient(45deg, white, #D1E4C4, white); 
+height: 300vh; }
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:15px;
+  margin-top:10px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:210px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+.buttons1{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:23px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:175px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  
+}
+.buttons1:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons1:active{
+opacity: 0.7;
+}
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:70px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ text-align: center;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: visible;}
+
+
+.dropdown{ display: flex;}
+ .dropdown button{
+  background-color: #D1E4C4; color: black; padding: 10px 30px;
+  border:none; cursor:pointer; box-shadow: 5px 5px 7px black;
+  transition:0.05s; border-radius:4px;
+ }
+
+ .dropdown a{
+  display: flex; text-decoration: none; text-align: center; padding: 10px 23px; margin-top:10px; background-color: #D1E4C4;
+  color:black; box-shadow: 5px 5px 7px black; border-radius:4px; margin-left:5px;
+ }
+
+ .dropdown .content{
+   position: absolute; min-width:100px;
+  display:none;
+ }
+
+ .dropdown:hover .content{ 
+  display:flex;
+ }
+ .dropdown:hover button{
+  background-color: #F1F7ED; color:black;
+ }
+ .dropdown a:hover{
+  background-color: #F1F7ED; color:black;
+ }
+<nav><div class="dropdown">
+ <button>Lessons</button>
+ <div class="content">
+  <a href="lesson1new.html" target="_blank">Lesson 1</a>
+  <a href="lesson2new.html" target="_blank">Lesson 2</a>
+  <a href="lesson3new.html" target="_blank">Lesson 3</a>
+  <a href="lesson4new.html" target="_blank">Lesson 4</a>
+  <a href="lesson5new.html" target="_blank">Lesson 5</a>
+  <a href="lesson6new.html" target="_blank">Lesson 6</a>
+  <a href="lesson7new.html" target="_blank">Lesson 7</a>
+  <a href="lesson8new.html" target="_blank">Lesson 8</a>
+  <a href="lesson9new.html" target="_blank">Lesson 9</a>
+  <a href="lesson10new.html" target="_blank">Lesson 10</a>
+  <a href="lesson11new.html" target="_blank">Lesson 11</a>
+  <a href="lesson12new.html" target="_blank">Lesson 12</a>
+  <a href="lesson13new.html" target="_blank">Lesson 13</a>
+ </div>
+</div></nav>
+
+.p{ font-size: 30px; cursor:pointer;}
+.p1 { font-size: 40px; cursor:pointer;}
+
+.div1 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; margin-bottom: 30px;}
+.div2 {display: grid; grid-template-columns: 900px; justify-content: center; margin-top: 20px;}
+.div3 {font-size: 30px;}
+.div4  {display: grid; grid-template-columns: 900px; justify-content: center; margin-top: 20px;}
+.div5 {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; margin-bottom: 30px;}
+.div6 {display: grid; grid-template-columns: 1fr 1fr;}
+.div7 {text-align: center; font-size: 40px;}
+.div8 {display: grid; grid-template-columns: 1fr 1fr 1fr;}
+.img {width:300px; height: 270px;}
+.img2 {width:300px; height: 270px; }
+
+@media screen and (max-width: 1000px){
+.p{ font-size: 25px;}
+.p1 {font-size: 25px;}
+
+.div1 {display: grid; grid-template-columns: 1fr;}
+.div2 {display: grid; grid-template-columns: 1fr;}
+.div3 {font-size: 25px;}
+.div4 {display: grid; grid-template-columns: 1fr;}
+.div5 {display: grid; grid-template-columns: 1fr;}
+.div6 {display: grid; grid-template-columns: 1fr;}
+.div7 {text-align: center; font-size: 30px;}
+.div8 {display: grid; grid-template-columns: 1fr ;}
+.wrapper { overflow-x: hidden; width: 100%; background: linear-gradient(45deg, white, #D1E4C4, white);}
+
+.img{width:150px; height: 135px;}
+.img2 {width:150px; height: 135px; }
+
+
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:30px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: hidden;}
+
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:250px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 5px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+}
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="wrapper">
+<h1 class="tooltips">  Group nouns <span class="tooltipstext"> </span> </h1> 
+
+<p class="p1" style="text-align: center; ">Some nouns refer to groups of people, animals or things:</p>
+
+
+
+<div class="div1" style="">
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding-top:30px; ">
+<button onmousedown="sound1.play()" class="buttons"> army </button>
+<button onmousedown="sound2.play()" class="buttons"> crew  </button>
+<button onmousedown="sound3.play()" class="buttons"> gang </button>
+<button onmousedown="sound4.play()" class="buttons"> public </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound5.play()" class="buttons"> audience </button>
+<button onmousedown="sound6.play()" class="buttons"> enemy </button>
+<button onmousedown="sound7.play()" class="buttons"> government </button>
+<button onmousedown="sound8.play()" class="buttons"> regiment </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound9.play()" class="buttons"> committee </button>
+<button onmousedown="sound10.play()" class="buttons"> family </button>
+<button onmousedown="sound11.play()" class="buttons"> group </button>
+<button onmousedown="sound12.play()" class="buttons"> staff </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound13.play()" class="buttons"> company </button>
+<button onmousedown="sound14.play()" class="buttons"> flock </button>
+<button onmousedown="sound15.play()" class="buttons"> herd </button>
+<button onmousedown="sound16.play()" class="buttons"> team </button>
+</div>
+
+</div>
+
+
+
+<div class="div2" style=" ">
+
+
+<div class="div3" style="text-align: left;  background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div class="div3" style="text-align: left; ">
+We can use these group nouns either as singular nouns or as plural nouns:<br><br>
+
+
+&bull; My family <b>is</b> very dear to me.<br>
+&bull; I have a large family. <b>They are</b> very dear to me.<br><br>
+
+&bull; The government <b>is</b> very unpopular.<br>
+&bull; The government <b>are</b> always changing <b>their</b> minds.<br><br>
+
+
+Sometimes we think of the group as a single thing:<br><br>
+
+&bull; The audience always <b>enjoys</b> the show.<br>
+&bull; The group <b>consists</b> of two men and three women.<br><br>
+
+
+Sometimes we think of the group as several individuals:<br><br>
+
+&bull; The audience clapped <b>their</b> hands.<br>
+&bull; The largest group <b>are</b> the boys.<br><br>
+
+The names of many organisations and teams are also group nouns, but they are usually plural in spoken English:<br><br>
+
+&bull; Barcelona <b>are</b> winning 2–0.<br>
+&bull; The United Oil Company <b>are</b> putting prices up by 12 per cent.<br><br>
+
+
+and the police is always plural:<br><br>
+
+The police <b>are</b> offering a £5,000 reward.
+
+</div>
+</div>
+
+</div>
+<script>
+
+  var sound1 = new Audio();
+  sound1.src = "army.mp3";
+
+  var sound2 = new Audio();
+  sound2.src = "crew.mp3";
+
+  var sound3 = new Audio();
+  sound3.src = "gang.mp3";
+
+  var sound4 = new Audio();
+  sound4.src = "public.mp3";
+
+  var sound5 = new Audio();
+  sound5.src = "audience.mp3";
+
+  var sound6 = new Audio();
+  sound6.src = "enemy.mp3";
+
+  var sound7 = new Audio();
+  sound7.src = "goverment.mp3";
+
+  var sound8 = new Audio();
+  sound8.src = "regiment.mp3";
+
+  var sound9 = new Audio();
+  sound9.src = "committee.mp3";
+
+  var sound10 = new Audio();
+  sound10.src = "family.mp3";
+
+  var sound11 = new Audio();
+  sound11.src = "group.mp3";
+
+  var sound12 = new Audio();
+  sound12.src = "staff.mp3";
+ 
+  var sound13 = new Audio();
+  sound13.src = "company.mp3";
+
+  var sound14 = new Audio();
+  sound14.src = "flock.mp3";
+
+  var sound15 = new Audio();
+  sound15.src = "herd.mp3";
+
+  var sound16 = new Audio();
+  sound16.src = "team.mp3";
+
+  var sound17 = new Audio();
+  sound17.src = "anitemof.mp3";
+
+  var sound18 = new Audio();
+  sound18.src = "itemsof.mp3";
+
+ 
+  var sound19 = new Audio();
+  sound19.src = "both.mp3";
+
+  var sound20 = new Audio();
+  sound20.src = "either.mp3";
+
+  var sound21 = new Audio();
+  sound21.src = "neither.mp3";
+
+  var sound22 = new Audio();
+  sound22.src = "afew.mp3";
+
+  var sound23 = new Audio();
+  sound23.src = "fewer.mp3";
+
+  var sound24 = new Audio();
+  sound24.src = "acoupleof.mp3";
+
+  var sound25 = new Audio();
+  sound25.src = "hundredsof.mp3";
+
+  var sound26 = new Audio();
+  sound26.src = "thousandsof.mp3";
+
+  var sound27 = new Audio();
+  sound27.src = "notmuch.mp3";
+
+  var sound28 = new Audio();
+  sound28.src = "abitof.mp3";
+
+  var sound29 = new Audio();
+  sound29.src = "alittle.mp3";
+
+  var sound30 = new Audio();
+  sound30.src = "agreatdealof.mp3";
+
+  var sound31 = new Audio();
+  sound31.src = "agooddealof.mp3";
+ 
+
+  
+
+
+</script>
+</body>
+</html>
